@@ -1,0 +1,16 @@
+{
+    "contents" : "# You can pass functions as arguments to other functions just like you can pass\n# data to functions. Let's say you define the following functions:\n#\n# add_two_numbers <- function(num1, num2){\n#    num1 + num2\n# }\n#\n# multiply_two_numbers <- function(num1, num2){\n#\tnum1 * num2\n# }\n#\n# some_function <- function(func){\n#    func(2, 4)\n# }\n#\n# As you can see we use the argument name \"func\" like a function inside of \n# \"some_function().\" By passing functions as arguments \n# some_function(add_two_numbers) will evaluate to 6, while\n# some_function(multiply_two_numbers) will evaluate to 8.\n# \n# Finish the function definition below so that if a function is passed into the\n# \"func\" argument and some data (like a vector) is passed into the dat argument\n# the evaluate() function will return the result of dat being passed as an\n# argument to func.\n#\n# Hints: This exercise is a little tricky so I'll provide a few example of how\n# evaluate() should act:\n#    1. evaluate(sum, c(2, 4, 6)) should evaluate to 12\n#    2. evaluate(median, c(7, 40, 9)) should evaluate to 9\n#    3. evaluate(floor, 11.1) should evaluate to 11\n\nevaluate <- function(func, dat){\n  # Write your code here!\n  # Remember: the last expression evaluated will be returned! \n  func(dat)\n}\n",
+    "created" : 1429542988513.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1879846956",
+    "id" : "E4060E53",
+    "lastKnownWriteTime" : 1429543083,
+    "path" : "/tmp/RtmpmYVBtm/evaluate.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

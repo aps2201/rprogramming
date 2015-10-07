@@ -1,0 +1,7 @@
+{
+    "installOptions" : {
+        "installDependencies" : true,
+        "installFromRepository" : true,
+        "libraryPath" : "/home/aps2201/R/x86_64-suse-linux-gnu-library/3.1"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "# Let's explore how to \"unpack\" arguments from an ellipses when you use the\n# ellipses as an argument in a function. Below I have an example function that\n# is supposed to add two explicitly named arguments called alpha and beta.\n# \n# add_alpha_and_beta <- function(...){\n#   # First we must capture the ellipsis inside of a list\n#   # and then assign the list to a variable. Let's name this\n#   # variable `args`.\n#\n#   args <- list(...)\n#\n#   # We're now going to assume that there are two named arguments within args\n#   # with the names `alpha` and `beta.` We can extract named arguments from\n#   # the args list by used the name of the argument and double brackets. The\n#   # `args` variable is just a regular list after all!\n#   \n#   alpha <- args[[\"alpha\"]]\n#   beta  <- args[[\"beta\"]]\n#\n#   # Then we return the sum of alpha and beta.\n#\n#   alpha + beta \n# }\n#\n# Have you ever played Mad Libs before? The function below will construct a\n# sentence from parts of speech that you provide as arguments. We'll write most\n# of the function, but you'll need to unpack the appropriate arguments from the\n# ellipses.\n\nmad_libs <- function(...){\n  # Do your argument unpacking here!\n  args <- list(...)\n  \n  place <- args[[\"place\"]]\n  adjective <- args[[\"adjective\"]]\n  noun <- args[[\"noun\"]]\n  # Don't modify any code below this comment.\n  # Notice the variables you'll need to create in order for the code below to\n  # be functional!\n  paste(\"News from\", place, \"today where\", adjective, \"students took to the streets in protest of the new\", noun, \"being installed on campus.\")\n}",
+    "created" : 1429544311771.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3508317778",
+    "id" : "C4AD8308",
+    "lastKnownWriteTime" : 1429544686,
+    "path" : "/tmp/RtmpmYVBtm/mad_libs.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "# You're free to implement the function my_mean however you want, as long as it\n# returns the average of all of the numbers in `my_vector`.\n#\n# Hint #1: sum() returns the sum of a vector.\n# \tEx: sum(c(1, 2, 3)) evaluates to 6\n#\n# Hint #2: length() returns the size of a vector.\n# \tEx: length(c(1, 2, 3)) evaluates to 3\n#\n# Hint #3: The mean of all the numbers in a vector is equal to the sum of all of\n#\t\t   the numbers in the vector divided by the size of the vector.\n#\n# Note for those of you feeling super clever: Please do not use the mean()\n# function while writing this function. We're trying to teach you something \n# here!\n#\n# Be sure to save this script and type submit() in the console after you make \n# your changes.\n\nmy_mean <- function(my_vector) {\n  # Write your code here!\n  # Remember: the last expression evaluated will be returned! \n  sum(my_vector)/length(my_vector)\n}\n",
+    "created" : 1429542672626.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3093309926",
+    "id" : "BB9B1C3C",
+    "lastKnownWriteTime" : 1429542770,
+    "path" : "/tmp/RtmpmYVBtm/my_mean.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

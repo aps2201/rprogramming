@@ -1,0 +1,16 @@
+{
+    "contents" : "# You're about to write your first function! Just like you would assign a value \n# to a variable with the assignment operator, you assign functions in the following\n# way:\n#\n# function_name <- function(arg1, arg2){\n#\t# Maipulate arguments in some way\n#\t# Return a value\n# }\n#\n# The \"variable name\" you assign will become the name of your function. arg1 and\n# arg2 represent the arguments of your function. You can maipulate the arguments\n# you specify within the function. After sourcing the function, you can use the \n# function by typing:\n# \n# function_name(value1, value2)\n#\n# Below we will create a function called boring_function. This function takes\n# the argument `x` as input, and returns the value of x without modifying it.\n# Delete the pound sign in front of the x to make the function work! Be sure to \n# save this script and type submit() in the console after you make your changes.\n\nboring_function <- function(x) {\n  x\n}\n",
+    "created" : 1429542513322.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4135814911",
+    "id" : "5991D449",
+    "lastKnownWriteTime" : 1429542645,
+    "path" : "/tmp/RtmpmYVBtm/boring_function.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

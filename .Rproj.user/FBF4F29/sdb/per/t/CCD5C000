@@ -1,0 +1,16 @@
+{
+    "contents" : "# The syntax for creating new binary operators in R is unlike anything else in\n# R, but it allows you to define a new syntax for your function. I would only\n# recommend making your own binary operator if you plan on using it often!\n#\n# User-defined binary operators have the following syntax:\n#      %[whatever]% \n# where [whatever] represents any valid variable name.\n# \n# Let's say I wanted to define a binary operator that multiplied two numbers and\n# then added one to the product. An implementation of that operator is below:\n#\n# \"%mult_add_one%\" <- function(left, right){ # Notice the quotation marks!\n#   left * right + 1\n# }\n#\n# I could then use this binary operator like `4 %mult_add_one% 5` which would\n# evaluate to 21.\n#\n# Write your own binary operator below from absolute scratch! Your binary\n# operator must be called %p% so that the expression:\n#\n#       \"Good\" %p% \"job!\"\n#\n# will evaluate to: \"Good job!\"\n\n\"%p%\" <- function(left,right){ # Remember to add arguments!\n      paste(left, right, sep = \" \")\n}\n\n\n\n",
+    "created" : 1429544752821.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3850085841",
+    "id" : "CCD5C000",
+    "lastKnownWriteTime" : 1429544825,
+    "path" : "/tmp/RtmpmYVBtm/bin_op.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

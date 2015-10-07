@@ -1,0 +1,16 @@
+{
+    "contents" : "# The ellipses can be used to pass on arguments to other functions that are\n# used within the function you're writing. Usually a function that has the\n# ellipses as an argument has the ellipses as the last argument. The usage of\n# such a function would look like:\n#\n# ellipses_func(arg1, arg2 = TRUE, ...)\n#\n# In the above example arg1 has no default value, so a value must be provided\n# for arg1. arg2 has a default value, and other arguments can come after arg2\n# depending on how they're defined in the ellipses_func() documentation.\n# Interestingly the usage for the paste function is as follows:\n#\n# paste (..., sep = \" \", collapse = NULL)\n#\n# Notice that the ellipses is the first argument, and all other arguments after\n# the ellipses have default values. This is a strict rule in R programming: all\n# arguments after an ellipses must have default values. Take a look at the\n# simon_says function below:\n#\n# simon_says <- function(...){\n#   paste(\"Simon says:\", ...)\n# }\n#\n# The simon_says function works just like the paste function, except the\n# begining of every string is prepended by the string \"Simon says:\"\n#\n# Telegrams used to be peppered with the words START and STOP in order to\n# demarcate the beginning and end of sentences. Write a function below called \n# telegram that formats sentences for telegrams.\n# For example the expression `telegram(\"Good\", \"morning\")` should evaluate to:\n# \"START Good morning STOP\"\n\ntelegram <- function(...){\n  paste(\"START\",...,\"STOP\")\n  \n}",
+    "created" : 1429544204784.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3891757568",
+    "id" : "878305A1",
+    "lastKnownWriteTime" : 1429544290,
+    "path" : "/tmp/RtmpmYVBtm/telegram.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

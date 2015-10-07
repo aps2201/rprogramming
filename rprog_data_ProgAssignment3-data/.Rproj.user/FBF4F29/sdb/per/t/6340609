@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1430334627724.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6340609",
+    "lastKnownWriteTime" : 2336083343015174514,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "apbdraw",
+        "contentUrl" : "content?title=apbdraw&file=19965b28f752463f9154a5ea238e4da9.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 17,
+        "totalObservations" : 16717,
+        "variables" : 17
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
