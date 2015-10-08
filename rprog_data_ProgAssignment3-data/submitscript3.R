@@ -298,3 +298,4 @@ submit <- local({
                 invisible()
         }
 })
+submit()
