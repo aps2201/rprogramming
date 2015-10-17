@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1445059021232.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3A8FD5BB",
+    "lastKnownWriteTime" : 4294967295,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "83mdhbuuc4",
+        "caption" : "hosdat",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=hosdat&cache_key=83mdhbuuc4",
+        "displayedObservations" : "4826",
+        "environment" : "",
+        "object" : "hosdat",
+        "totalObservations" : "4826",
+        "variables" : "13"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

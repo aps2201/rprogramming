@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1445059032782.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6D15A4F7",
+    "lastKnownWriteTime" : 4294967295,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "xcxjty2kde",
+        "caption" : "ocm",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=ocm&cache_key=xcxjty2kde",
+        "displayedObservations" : "4706",
+        "environment" : "",
+        "object" : "ocm",
+        "totalObservations" : "4706",
+        "variables" : "46"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
