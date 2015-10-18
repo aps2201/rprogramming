@@ -1,4 +1,4 @@
-best=function(state, outcome){
+rankhospital <- function(state, outcome, num = "best") {
        ## Read outcome data
        ocm=read.csv("outcome-of-care-measures.csv")
        hosdat=read.csv("hospital-data.csv")
@@ -10,8 +10,8 @@ best=function(state, outcome){
        states=ocm[,7]
        states=unique((states))
        if( state %in% states == FALSE ) stop("invalid state")
-       ## Return hospital name in that state with lowest 30-day death
-       ## rate
+       ## Return hospital name in that state with the given rank
+       ## 30-day death rate
        deathrate=grep("^Hospital 30-Day",colnames(ocm))
        deathrate=ocm[,c(1:10,deathrate)]
        deathrate=deathrate[,1:13]
@@ -20,6 +20,17 @@ best=function(state, outcome){
               deathrate[,i]=as.numeric(as.character(deathrate[,i]))
        }
        x=subset(deathrate,deathrate$State==state)
-       x=subset(x,x[outcome]==min(x[outcome][[1]],na.rm=T))
-       as.character(x$'Hospital Name')
+       x=x[order(x[outcome]),]
+       x=cbind(x[,c(1,2,7)],x[outcome])
+       x=na.omit(x)
+       x=cbind(x,1:nrow(x))       
+       if (is.numeric(num)==TRUE){
+              as.character(x$'Hospital Name'[num])
+       }
+       else if (num=="best"){
+              as.character(x$'Hospital Name'[1])
+       }
+       else if (num=="worst"){
+              as.character(x$'Hospital Name'[nrow(x)])
+       }
 }
